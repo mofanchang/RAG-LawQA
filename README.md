@@ -2,6 +2,7 @@
 # 法規查詢輕量 RAG 系統 (Mini RAG for Legal QA)
 
 本專案為「企業級法遵智慧系統」的簡化版本，展示如何使用嵌入模型與輕量大語言模型，實作台灣食品廣告法規的查詢與違規判定。
+![ReguRAG Banner](law.png)
 
 ## 專案特色
 
@@ -14,11 +15,11 @@
 
 ## 專案結構
 
-main.py # 主程式：載入向量、進行語意查詢與 LLM 推論
-laws_clean.pkl # 清理後的法條 (少量示範用)
-law_embeddings_ip.faiss # 對應的 FAISS 索引檔
-requirements.txt # 安裝套件清單
-README.md # 本說明文件
+- main.py # 主程式：載入向量、進行語意查詢與 LLM 推論
+- laws_clean.pkl # 清理後的法條 (少量示範用)
+- law_embeddings_ip.faiss # 對應的 FAISS 索引檔
+- requirements.txt # 安裝套件清單
+- README.md # 本說明文件
 
 
 ## 快速開始
@@ -33,6 +34,8 @@ python main.py
 範例輸入
 test_ad_detection("本產品能有效預防癌症！")
 test_law_query("食品廣告不能使用哪些詞彙？")
+
+
 
 
 
