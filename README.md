@@ -14,15 +14,12 @@
 
 ## 專案結構
 
-├── main.py # 主程式：載入向量、進行語意查詢與 LLM 推論
-├── laws_clean.pkl # 清理後的法條 (少量示範用)
-├── law_embeddings_ip.faiss # 對應的 FAISS 索引檔
-├── requirements.txt # 安裝套件清單
-└── README.md # 本說明文件
+main.py # 主程式：載入向量、進行語意查詢與 LLM 推論
+laws_clean.pkl # 清理後的法條 (少量示範用)
+law_embeddings_ip.faiss # 對應的 FAISS 索引檔
+requirements.txt # 安裝套件清單
+README.md # 本說明文件
 
-shell
-複製
-編輯
 
 ## 快速開始
 
@@ -30,21 +27,13 @@ shell
 
 ```bash
 pip install -r requirements.txt
+
 2. 執行主程式
-bash
-複製
-編輯
 python main.py
 範例輸入
-python
-複製
-編輯
 test_ad_detection("本產品能有效預防癌症！")
 test_law_query("食品廣告不能使用哪些詞彙？")
-說明
-laws_clean.pkl：已清理並分割好的法規條文列表（以 pickle 儲存）
 
-law_embeddings_ip.faiss：使用 paraphrase-multilingual-MiniLM-L12-v2 計算向量並建立的索引
 
 
 
