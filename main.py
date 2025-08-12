@@ -16,7 +16,7 @@ index = faiss.read_index("law_embeddings_ip.faiss")
 embedding_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
 
 bnb_config = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_compute_dtype="float16")
-selected_model = "Qwen/Qwen1.5-1.8B-Chat"
+selected_model = ""
 tokenizer = AutoTokenizer.from_pretrained(selected_model, trust_remote_code=True)
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
@@ -88,3 +88,4 @@ def test_law_query(question):
 if __name__ == "__main__":
     test_ad_detection("本產品能有效預防癌症！")
     test_law_query("食品廣告不能使用哪些詞彙？")
+
